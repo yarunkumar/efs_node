@@ -46,7 +46,7 @@ module.exports.connections = {
     port: 3306,
     user: 'root', //optional
     password: 'admin', //optional
-    database: 'eaglenode1' //optional
+    database: 'eaglenode' //optional
    },
 
   /***************************************************************************
