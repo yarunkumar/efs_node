@@ -8,7 +8,38 @@
 module.exports = {
 
   attributes: {
+  	id: {
+  		type: 'string',
+  	},
+	customer_id: {
+  	type: 'string'
+  },
+  category: {
+  	type: 'string'
+  },
+  description: {
+  	type: 'string'
+  },
+  acquiredvalue:  {
+  	type: 'string'
+  },
+  acquireddate:  {
+  	type: 'string'
+  },
+  recentvalue: {
+  	type: 'string'
+  },
+  recentdate: {
+  	type: 'string'
+  },
+  createdAt: {
+  	type: 'string'
+  },
+  updatedAt: {
+  	type: 'string'
+  },
 
   }
 };
+
 

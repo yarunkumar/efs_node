@@ -8,7 +8,33 @@
 module.exports = {
 
   attributes: {
-
+  	 	id: {
+  		type: 'string',
+  	},
+	customer_id: {
+  	type: 'string'
+  },
+  stsymbol: {
+  	type: 'string'
+  },
+  stname: {
+  	type: 'string'
+  },
+  noshares:  {
+  	type: 'string'
+  },
+  purchaseprice:  {
+  	type: 'string'
+  },
+  datepurchased: {
+  	type: 'string'
+  },
+  createdAt: {
+  	type: 'string'
+  },
+  updatedAt: {
+  	type: 'string'
+  },
   }
 };
 

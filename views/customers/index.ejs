@@ -1,0 +1,37 @@
+<h3>customerss</h3>
+<table>
+<tr>
+   <th>ID</th>
+   <th>Name</th>
+   <th>streetaddress</th>
+   <th>City</th>
+   <th>State</th>
+   <th>Zip</th>
+   <th>Primary Email</th>
+   <th>Home Phone</th>
+   <th>Cell Phone</th>
+   <th>Created At</th>
+   <th>Updated At</th>
+   <th></th>
+   <th></th>
+   <th></th>
+ </tr>
+ <% _.each(customers, function(customers) { %>
+ <tr data-id="<%= customers.id %>" data-model="customers" >
+ <td><%= customers.id %></td>
+ <td><%= customers.name %></td>
+ <td><%= customers.streetaddress %></td>
+ <td><%= customers.city %></td>
+ <td><%= customers.state %></td>
+ <td><%= customers.zip %></td>
+ <td><%= customers.primaryemail %></td>
+ <td><%= customers.homephone %></td>
+ <td><%= customers.cellphone %></td>
+ <td><%= customers.createdAt %></td>
+ <td><%= customers.updatedAt %></td>
+ <td><a href="/customers/show/<%= customers.id %>">Show</a></td>
+ <td><a href="/customers/edit/<%= customers.id %>">Edit</a></td>
+ <td><a href="/customers/destroy/<%= customers.id %>">Destroy</a></td>
+ </tr>
+ <%  }) %>
+ </table>

@@ -10,9 +10,42 @@ module.exports = {
   autoCreatedAt: false,
 autoUpdatedAt: false,
   attributes: {
-  	
-
-
+  	name: {
+  		type: 'string',
+  	},
+	id: {
+  	type: 'string'
+  },
+  name: {
+  	type: 'string'
+  },
+  streetaddress: {
+  	type: 'string'
+  },
+  city:  {
+  	type: 'string'
+  },
+  state:  {
+  	type: 'string'
+  },
+  zip: {
+  	type: 'string'
+  },
+  primaryemail: {
+  	type: 'string'
+  },
+  homephone: {
+  	type: 'string'
+  },
+  cellphone: {
+  	type: 'string'
+  },
+  createdAt: {
+  	type: 'string'
+  },
+  updatedAt: {
+  	type: 'string'
+  },
   }
 };
 
