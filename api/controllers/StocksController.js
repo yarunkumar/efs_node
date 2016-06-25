@@ -6,6 +6,26 @@
  */
 
 module.exports = {
+	'new': function(req, res) {
+		res.view();
+	},
+
+	create: function(req,res,next) {
+		Stocks.create( req.params.all(), function stocksCreated(err, stocks){
+			if(err) return next(err);
+
+			res.redirect('/stocks/show/' + stocks.id);
+		});
+	},
 	
+	show: function(req,res,next){
+		Stocks.findOne(req.param('id'), function foundStocks(err, stocks) {
+			if(err) return next(err);
+			if (!stocks) return next();
+			res.view({
+				stocks: stocks
+			});
+		});
+	}
 };
 
