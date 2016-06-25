@@ -26,6 +26,16 @@ module.exports = {
 				stocks: stocks
 			});
 		});
+	},
+
+	index: function(req,res,next){
+		Stocks.find(function foundStockss (err, stockss){
+			if(err) return next(err);
+
+			res.view({
+				stockss: stockss
+			});
+		});
 	}
 };
 
