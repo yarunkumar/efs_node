@@ -3,6 +3,7 @@
 <tr>
    <th>ID</th>
    <th>Customer ID</th>
+   <th>Symbol</th>
    <th>Created At</th>
    <th></th>
    <th></th>
@@ -12,6 +13,7 @@
  <tr data-id="<%= stocks.id %>" data-model="stocks" >
  <td><%= stocks.id %></td>
  <td><%= stocks.customer_id %></td>
+ <td><%= stocks.stsymbol %></td>
  <td><%= stocks.createdAt %></td>
  <td><a href="/stocks/show/<%= stocks.id %>">Show</a></td>
  <td><a href="/stocks/edit/<%= stocks.id %>">Edit</a></td>

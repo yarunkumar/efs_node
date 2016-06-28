@@ -16,9 +16,6 @@ autoUpdatedAt: false,
 	id: {
   	type: 'string'
   },
-  name: {
-  	type: 'string'
-  },
   streetaddress: {
   	type: 'string'
   },
@@ -45,7 +42,7 @@ autoUpdatedAt: false,
   },
   updatedAt: {
   	type: 'string'
-  },
+  }
   }
 };
 

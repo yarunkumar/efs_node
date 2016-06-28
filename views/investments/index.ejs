@@ -1,0 +1,34 @@
+<h3>Investments</h3>
+<table>
+<tr>
+   <th>ID</th>
+   <th>Customer ID</th>
+   <th>category</th>
+   <th>description</th>
+   <th>acquiredvalue</th>
+   <th>acquireddate</th>
+   <th>recentvalue</th>
+   <th>created At</th>
+   <th>updated At</th>
+   <th></th>
+   <th></th>
+   <th></th>
+ </tr>
+ <% _.each(investmentss, function(investments) { %>
+ <tr data-id="<%= investments.id %>" data-model="investments" >
+ <td><%= investments.id %></td>
+ <td><%= investments.customer_id %></td>
+ <td><%= investments.category %></td>
+ <td><%= investments.description %></td>
+ <td><%= investments.acquiredvalue %></td>
+ <td><%= investments.acquireddate %></td>
+ <td><%= investments.recentvalue %></td>
+ <td><%= investments.recentdate %></td>
+ <td><%= investments.createdAt %></td>
+ <td><%= investments.updatedAt %></td>
+ <td><a href="/investments/show/<%= investments.id %>">Show</a></td>
+ <td><a href="/investments/edit/<%= investments.id %>">Edit</a></td>
+ <td><a href="/investments/destroy/<%= investments.id %>">Destroy</a></td>
+ </tr>
+ <%  }) %>
+ </table>
