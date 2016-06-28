@@ -27,7 +27,7 @@ module.exports = {
 
   // port: 80,
   host: '127.5.221.2',
-    port: 3306
+    port: 8080
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *
