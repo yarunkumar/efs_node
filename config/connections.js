@@ -48,7 +48,14 @@ module.exports.connections = {
     password: 'admin', //optional
     database: 'eaglenode' //optional
    },
-
+OSnodeMysql: {
+    adapter: 'sails-mysql',
+    host: '127.5.221.2',
+    port: 3306,
+    user: 'admin5MmeSK4', //optional
+    password: 'R7zussaKNV93', //optional
+    database: 'efsnode' //optional
+   },
   /***************************************************************************
   *                                                                          *
   * MongoDB is the leading NoSQL database.                                   *
