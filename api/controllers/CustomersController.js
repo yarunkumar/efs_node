@@ -57,7 +57,11 @@ module.exports = {
 	},
 
 	destroy: function(req, res, next) {
-		Customers.destroy(req.param('id')).exec( function()  {
+		console.log('Req value : '+req.param('id'));
+		Customers.destroy(req.param('id')).exec( function(err)  {
+			if (err) {
+    return res.negotiate(err);
+  }
 			res.redirect('/customers/');
 			});	
 			}

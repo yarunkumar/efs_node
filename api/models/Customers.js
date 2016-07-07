@@ -10,12 +10,13 @@ module.exports = {
   autoCreatedAt: false,
 autoUpdatedAt: false,
   attributes: {
-  	name: {
+  	id: {
+    type: 'string',
+    primaryKey:true
+  },
+  name: {
   		type: 'string',
   	},
-	id: {
-  	type: 'string'
-  },
   streetaddress: {
   	type: 'string'
   },
@@ -42,7 +43,12 @@ autoUpdatedAt: false,
   },
   updatedAt: {
   	type: 'string'
-  }
+  },
+
+  stocks: {
+      collection: 'stocks',
+      via: 'owner'
+    }
   }
 };
 

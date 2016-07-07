@@ -10,6 +10,7 @@ module.exports = {
   attributes: {
   	 	id: {
   		type: 'string',
+      primaryKey:true
   	},
 	customer_id: {
   	type: 'string'
@@ -34,7 +35,12 @@ module.exports = {
   },
   updatedAt: {
   	type: 'string'
-  }
+  },
+  
+ owner: {
+      model: 'customers',
+      required: true
+    }
   }
 };
 
